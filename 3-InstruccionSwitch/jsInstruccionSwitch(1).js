@@ -17,8 +17,8 @@ var mensaje;
  	case"Diciembre":
  	mensaje = "Felices fiestas "
  		break;
- 	
  }
+ 
 
  	alert(mensaje);
 	
