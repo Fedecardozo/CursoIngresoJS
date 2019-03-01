@@ -7,15 +7,9 @@ function mostrar()
 	edad1 = edad.value;
 	edad1 = parseInt(edad1);
 
-	if(edad1<18)
+	if(edad1<18 && edad1>12)
 	{
-		
-	
-
-			if(edad1>12)
-			{
-				mensaje = (" Es adolescente ");
-			}
+		mensaje = (" Es adolescente ");
 	}	
 
 	alert(mensaje);

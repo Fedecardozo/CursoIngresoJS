@@ -7,18 +7,19 @@ function mostrar()
 	//console.log(numeroRandom);
 	numeroRandom = parseInt(numeroRandom);
 
-	if(numeroRandom==9 && 10)
-		{
-			mensaje = " Excelente " + numeroRandom;
-		}
-		if(numeroRandom>3)
-		{
-			mensaje = "Aprobo " + numeroRandom;
-		}
-		else
-		{
-			mensaje = " Vamos, para la proxima se puede " + numeroRandom;
-		}
-		alert(mensaje);
-		console.log(numeroRandom)
+
+	if(numeroRandom>3)
+	{
+		mensaje = "Aprobo " + numeroRandom;
+	}
+	else
+	{
+		mensaje = " Vamos, para la proxima se puede " + numeroRandom;
+	}	
+	if(numeroRandom==9 || numeroRandom==10)
+	{
+		mensaje = " Excelente " + numeroRandom;
+	}
+	alert(mensaje);
+	console.log(numeroRandom)
 }//FIN DE LA FUNCIÓN
