@@ -12,7 +12,7 @@ function mostrarAumento()
 	
 	sueldo = parseInt(sueldo);
 	
-	aumento = sueldo * 1.1;
+	aumento = sueldo * 0.1;
 
 	sueldoConAumento = sueldo + aumento;
 
