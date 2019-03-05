@@ -1,6 +1,6 @@
 function mostrar()
 {
-	var planeta;
+	/*var planeta;
 
 	planeta=prompt(" Ingrese planeta ");
 
@@ -26,5 +26,38 @@ function mostrar()
 		default:
 		mensaje=" No es un planeta valido ";
 	}
+	alert(mensaje);*/
+	//*****************************
+
+	var planeta;
+	var mensaje;
+
+	planeta=prompt("Ingrese planeta");
+
+	switch(planeta)
+	{
+		case"tierra":
+		mensaje="aca vivimos";
+			break;
+
+		case"mercurio":
+		case"venus":
+		mensaje="aca hace mas calor";
+			break;
+
+		case"marte":
+		case"jupiter":
+		case"saturno":
+		case"urano":
+		case"neptuno":
+		mensaje="aca hace mas frio";
+			break;
+
+		default:
+		mensaje="este planeta no es valido";
+	}
+
 	alert(mensaje);
+
+
 }
