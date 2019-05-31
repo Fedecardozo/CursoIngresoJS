@@ -3,7 +3,7 @@ y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
 	var nombre;
-	nombre=prompt("Please enter your name", "Fede");
+	nombre=prompt("Ingrese nombre", "fede");
 	alert(nombre);
 }
 
