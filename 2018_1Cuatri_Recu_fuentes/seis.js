@@ -1,40 +1,44 @@
-/*4-Pedir dos numeros y mostrar el el resultado:
-Si son iguales los muestro concatenados. Si el primero es mayor,los resto, de lo contrario los sumo.
-Si la suma es mayor a 10, ademas de mostrar el resultado, muestro el mensaje "la suma es xxx y supero el 10"
-usamos IF*/
+/*6-Se ingresa una hora. 
+Si está entre las 6 y las 11 mostrar:"es de mañana", 
+si es desde las 12 a las 19: "es de tarde", 
+de lo contrario informar que es de noche. 
+Informar si la hora no es válida. 
+Si es de noche y la hora es menor a 24 mostrar se debe agregar el mensaje : "a dormir".*/
 
 function mostrar()
 {
-	var numero;
-	var numeroDos;
-	var resta;
-	var suma;
+	var hora;
 	var mensaje;
 
-	numero=prompt("Ingrese numero");
-	numeroDos=prompt("Ingrese segundo numero");
-	numero=parseInt(numero);
-	numeroDos=parseInt(numeroDos);
+	hora = laHora.value;
 
-	if(numero==numeroDos)
+	if(hora>5 && hora<12)
 	{
-		mensaje=(" Numero uno" + numero + " numero dos " + numeroDos);
+		mensaje = "Es de mañana";
 	}
 	else
 	{
-		if(numero>numeroDos)
+		switch(hora)
 		{
-			resta=numero - numeroDos;
-			mensaje=" La resta es " + resta;
+			case "20":
+			case "21":
+			case "22":
+			case "23":
+			mensaje = "a dormir";
+			break;
+		
+			default:
+		
+			mensaje = "es de noche";
+			break;
 		}
-		else
-		{
-			suma=numero + numeroDos;
-		}
+		if(hora>11 && hora<20)
+			{
+				mensaje = "Es de tarde";
+			}
 	}
-	if(suma>10)
-	{
-		mensaje=" La suma es " + suma + " y supero el 10 ";
-	}
+
 	alert(mensaje);
+
+	
 }
