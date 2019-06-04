@@ -11,6 +11,103 @@ el ingreso por document.write:
 
 function mostrar()
 {
+	var letra;
+	var numero;
+	var promedio;
+	var letraMin;
+	var letraMax;
+	var numeroMax;
+	var numeroMin;
+	var respuesta="si";
+	var contadorPar=0;
+	var contadorImpar=0;
+	var contadorCeros=0;
+	var contador=0;
+	var contadorPosi=0;
+	var suma=0;
+	var sumaNega=0;
+
+
+	while(respuesta!="no")
+	{
+		letra = prompt("Ingrese letra ");
+		numero = prompt("Ingrese numero ");
+		numero = parseInt(numero);
+
+		while(numero<-100 || numero>100)
+		{
+			numero = prompt("Error, ingrese nuevamente");
+			numero = parseInt(numero);
+		}
+		if(numero%2 == 0)
+		{
+			contadorPar++;
+		}
+		if(numero%2 != 0)
+		{
+			contadorImpar++;
+		}
+		if(numero == 0)
+		{
+			contadorCeros++;
+		}
+		if(numero>0)
+		{
+			suma = suma + numero;
+			contadorPosi++; 
+ 		} 
+ 		if(numero<0)
+ 		{
+ 			sumaNega= sumaNega + numero;
+ 		}
+ 		if(contador==0)
+ 		{
+ 			numeroMin=numero;
+ 			numeroMax=numero;
+ 			letraMin=letra;
+ 			letraMax=letra;
+ 		}
+ 		else
+ 		{
+ 			if(numero<numeroMin)
+ 			{
+ 				numeroMin = numero;
+ 				letraMin = letra;
+ 			}
+ 			if(numero>numeroMax)
+ 			{
+ 				numeroMax = numero;
+ 				letraMax = letra;
+ 			}
+ 		}
+
+		contador++;
+		respuesta=prompt("Quiere seguir?");
+		promedio=suma/contadorPosi;
+	}
+
+	document.write("1- contador par " + contadorPar + "<br>" + 
+		"2- contador impar " + contadorImpar + "<br>" + 
+		"3- contador ceros " + contadorCeros + "<br>" + 
+		"4- promedio " + promedio + "<br>" + 
+		"5- suma negativo " + sumaNega + "<br>" +
+		"6- numero maximo " + numeroMax + " letra: " + letraMax + "<br>" +
+		"7- numero minimo " + numeroMin + " letra : " + letraMin );
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*{
 	var pais;
 	var territorio;
 	var respuesta;
@@ -98,4 +195,4 @@ function mostrar()
 	"5-El promedio de kilómetros ingresados.= " + promedioSuperficie + "<br>" +
 	"6-El nombre del que menos territorio tiene= " + paisMenor + " y su territorio es: " + territorioMinimo);
 
-}
+}*/

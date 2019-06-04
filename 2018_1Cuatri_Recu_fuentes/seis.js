@@ -33,9 +33,10 @@ function mostrar()
 			break;
 		}
 		if(hora>11 && hora<20)
-			{
-				mensaje = "Es de tarde";
-			}
+		{
+			mensaje = "Es de tarde";
+		}
+		
 	}
 
 	alert(mensaje);
