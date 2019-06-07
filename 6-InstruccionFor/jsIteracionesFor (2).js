@@ -24,7 +24,4 @@ function mostrar()
 		console.log(" No es primo ");
 	}
 
-	
-
-
 }

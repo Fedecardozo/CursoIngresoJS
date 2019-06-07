@@ -1,13 +1,10 @@
 function mostrar()
 {
-	var contador;
+	var i;
 
-	contador = 0;
-	for( ; ;)
+	for(i=1 ;i<=10 ;i++)
 	{
-		document.write(contador);
-		contador++;
-		if(contador==5)
-			break
+		document.write(i + "<br>");
 	}
+
 }
