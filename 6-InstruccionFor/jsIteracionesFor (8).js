@@ -2,8 +2,6 @@ function mostrar()
 {
 	var numero;
 	var i;
-	var primo;
-	var contador=0;
 
 	numero=prompt("Ingrese numero: ");
 	numero = parseInt(numero);
